@@ -1,0 +1,62 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'alibaba';
+
+  @media (max-width: 992px) {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  }
+  // background-color: var(--bs-gray-100);
+}
+
+.sans {
+  font-family: var(--bs-font-sans-serif);
+}
+
+aside, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bs-black);
+}
+
+li, ul, ol, td, dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  appearance: auto;
+  text-rendering: auto;
+  color: buttontext;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: buttonface;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
