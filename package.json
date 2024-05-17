@@ -1,6 +1,5 @@
 {
   "name": "haosama-ui",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/hao-ui.umd.js",
