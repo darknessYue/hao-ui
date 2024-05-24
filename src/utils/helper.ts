@@ -1,4 +1,7 @@
 
+import { each } from "lodash-es";
+import { App, Plugin } from "vue";
+
 interface CheckCondition {
   format?: string[];
   // 使用多少 M为单位
@@ -36,4 +39,23 @@ export const commonUploadCheck = (file: File) => {
     alert(`上传图片大小不能超过${size}M`);
   }
   return passed
+}
+
+type SFCWithInstall<T> = T & Plugin;
+export const withInstall = <T>(component: T) => {
+  (component as SFCWithInstall<T>).install = (app: App) => {
+    const name = (component as any)?.name || "UnnamedComponent";
+    app.component(name, component as Plugin);
+  };
+  return component as SFCWithInstall<T>;
+}
+
+
+export function makeInstaller(components: Plugin[]) {
+  const installer = (app: App) => {
+    each(components, (c) => {
+      app.use(c);
+    });
+  };
+  return installer as Plugin;
 }

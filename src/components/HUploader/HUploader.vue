@@ -48,9 +48,14 @@ interface UploadFile {
   resp?: any;
   url?: string
 }
+// interface UploadResp {
+//   url: string;
+//   code: number;
+//   msg: string;
+// }
 
 export default defineComponent({
-  name: 'LUploader',
+  name: 'HUploader',
   props: {
     action: {
       type: String,
@@ -65,7 +70,7 @@ export default defineComponent({
       default: () => true,
     },
     uploadSuccess: {
-      type: Function as PropType<(resp: UploadResp[]) => void>,
+      type: Function as PropType<(resp: any[]) => void>,
       default: () => {}
     },
     drag: {
@@ -252,54 +257,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-button {
-  font-size: 14px;
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 3px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-button:disabled {
-  color: #ccc;
-  background-color: #eee;
-  border-color: #ccc;
-  cursor: default
-}
-.file-list {
-  padding: 20px;
-}
-
-.file-list li {
-  padding-left: 10px;
-  font-size: 14px;
-  margin-bottom: 10px;
-  border-left: 2px solid transparent;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  
-}
-
-
-.file-list li.upload-success {
-  border-color: #03f303;
-}
-
-.file-list li.upload-ready {
-  border-color: blue;
-}
-
-.file-list li.upload-error {
-  border-color: red
-}
-
-.file-list li.uploading {
-  border-color: orange;
-}
-
-.file-list li .file-btn-delete {
-  margin-left: 10px;
-  font-size: 18px;
-}
+@import "./style.css";
 </style>

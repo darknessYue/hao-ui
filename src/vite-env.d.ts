@@ -6,8 +6,3 @@ declare module "*.vue" {
   export default component
 }
 
-declare interface UploadResp {
-  url: string;
-  code: number;
-  msg: string;
-}

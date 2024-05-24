@@ -1,8 +1,6 @@
-import { App } from 'vue';
-import HButton from './HButton.vue';
+import Button from './HButton.vue';
+import { withInstall } from '../../utils/helper';
 
-HButton.install = (app: App) => {
-  app.component(HButton.name as string, HButton);
-};
+const HButton = withInstall(Button);
 
 export default HButton;

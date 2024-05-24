@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import HelloWorld from './components/HelloWorld.vue'
   import HButton from './components/HButton/HButton.vue'
 // import { onMounted, getCurrentInstance } from 'vue';
 
@@ -10,7 +9,6 @@
 
 <template>
   <h1>Hao-UI</h1>
-  <hello-world msg="Hello Hao-UI" />
   <h-button type="primary">点击</h-button>
   <h-button type="default">点击</h-button>
   <h-button type="success">点击</h-button>

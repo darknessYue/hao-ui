@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import useComponentCommon from '@/hooks/useComponentCommon'
-import { textDefaultProp, textStylesProps } from '@/defaultProps';
+import useComponentCommon from '../../hooks/useComponentCommon'
+import { textDefaultProp, textStylesProps } from '../../defaultProps';
 
 
 export interface LTextProps extends  /* @vue-ignore */ textDefaultProp {
@@ -24,7 +24,5 @@ const {styleProps, handleClick} = useComponentCommon(props, textStylesProps)
 </script>
 
 <style scoped>
-.l-text-component {
-  font-size: 12px;
-}
+@import "./style.css";
 </style>

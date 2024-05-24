@@ -9,8 +9,8 @@ export const name = 'hao-ui'
 export const file = type => `dist/hao-ui.${type}.js`
 const overrides = {
   compilerOptions: {
-    noImplicitAny: false,
-    allowImportingTsExtensions: false,
+    // noImplicitAny: false,
+    // allowImportingTsExtensions: false,
     declaration: true,
     
   },

@@ -2,7 +2,6 @@
 import axios from 'axios';
 // import Dialog from '@/components/Dialog'
 // import { useUserStore } from '@/store/user';
-import {router} from '../router'
 
 const instance = axios.create({
   baseURL: import.meta.env.VITE_BASEURL,
@@ -55,7 +54,6 @@ instance.interceptors.response.use(function (response) {
 
   if(response.data.statusCode && response.data.statusCode === 401) {
     // useUserStore().logout(false)
-    router.replace('/login')
   }
 
   try {

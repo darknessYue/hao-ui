@@ -1,29 +1,25 @@
-import { App } from "vue";
-import LText from "./components/LText";
-import LUploader from "./components/LUploader";
+import { Plugin } from "vue";
+import HText from "./components/HText";
+import HUploader from "./components/HUploader";
 import HButton from "./components/HButton";
+import { makeInstaller } from "./utils/helper";
 export type { commonDefaultProp, textDefaultProp, imageCommponentsProp, buttonDefaultProp } from "./defaultProps"
 export { commonDefaultProps, textDefaultProps, imageDefaultProps, isEditingProp, textStylesProps, imageStylesProps, transformToComponentProps, buttonDefaultProps, buttonStylesProps } from "./defaultProps"
 
 const components = [
-  LText,
-  LUploader,
+  HText,
+  HUploader,
   HButton
-]
+] as Plugin[]
 
-const install = (app: App) => {
-  components.forEach(component => {
-    app.component(component.name!, component)
-  })
-}
+const installer = makeInstaller(components)
 
 export { 
-  LText,
-  LUploader,
-  install,
+  HText,
+  HUploader,
   HButton
 }
 
-export default {
-  install
-}
+export default installer
+
+export * from  "./components"
