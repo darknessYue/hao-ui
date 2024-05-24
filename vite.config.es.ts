@@ -25,8 +25,8 @@ export default defineConfig({
     outDir: "dist/es",
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "HaoUi",
-      fileName: "hao-ui",
+      name: "SpUi",
+      fileName: "sp-ui",
       formats: ["es"]
     },
     rollupOptions: {

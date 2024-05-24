@@ -8,8 +8,8 @@ export default defineConfig({
     outDir: "dist/umd",
     lib: {
       entry: resolve(__dirname, "./src/index.ts"),
-      name: "HaoUi",
-      fileName: "hao-ui",
+      name: "SpUi",
+      fileName: "sp-ui",
       formats: ["umd"]
     },
     rollupOptions: {

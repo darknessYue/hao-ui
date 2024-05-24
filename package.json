@@ -1,14 +1,14 @@
 {
-  "name": "haosama-ui",
-  "version": "1.0.0",
+  "name": "sp-ui",
+  "version": "0.0.1",
   "type": "module",
-  "main": "./dist/umd/hao-ui.umd.cjs",
-  "module": "./dist/es/hao-ui.js",
+  "main": "./dist/umd/sp-ui.umd.cjs",
+  "module": "./dist/es/sp-ui.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/es/hao-ui.js",
-      "require": "./dist/umd/hao-ui.umd.cjs",
+      "import": "./dist/es/sp-ui.js",
+      "require": "./dist/umd/sp-ui.umd.cjs",
       "types": "./dist/types/index.d.ts"
     },
     "./dist/": {

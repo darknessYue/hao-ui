@@ -13,7 +13,7 @@ export default [{
   ...basicConfig,
   output: 
   {
-    file: 'dist/hao-ui.d.ts',
+    file: 'dist/sp-ui.d.ts',
     format: 'es',
   },
   plugins: [
