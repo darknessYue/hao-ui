@@ -1,6 +1,7 @@
 {
   "name": "@haosama/sp-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "private": false,
   "type": "module",
   "main": "./dist/umd/sp-ui.umd.cjs",
   "module": "./dist/es/sp-ui.js",
