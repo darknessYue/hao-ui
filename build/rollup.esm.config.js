@@ -13,7 +13,7 @@ export default [{
   ...basicConfig,
   output: 
   {
-    file: 'dist/kami-ui.d.ts',
+    file: 'dist/ppsp-ui.d.ts',
     format: 'es',
   },
   plugins: [

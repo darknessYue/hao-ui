@@ -1,15 +1,15 @@
 {
-  "name": "kami-ui",
-  "version": "0.0.4",
+  "name": "ppsp-ui",
+  "version": "0.0.5",
   "private": false,
   "type": "module",
-  "main": "./dist/umd/kami-ui.umd.cjs",
-  "module": "./dist/es/kami-ui.js",
+  "main": "./dist/umd/ppsp-ui.umd.cjs",
+  "module": "./dist/es/ppsp-ui.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/es/kami-ui.js",
-      "require": "./dist/umd/kami-ui.umd.cjs",
+      "import": "./dist/es/ppsp-ui.js",
+      "require": "./dist/umd/ppsp-ui.umd.cjs",
       "types": "./dist/types/index.d.ts"
     },
     "./dist/": {

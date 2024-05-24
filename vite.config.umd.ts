@@ -8,8 +8,8 @@ export default defineConfig({
     outDir: "dist/umd",
     lib: {
       entry: resolve(__dirname, "./src/index.ts"),
-      name: "KamiUi",
-      fileName: "kami-ui",
+      name: "PpspUi",
+      fileName: "ppsp-ui",
       formats: ["umd"]
     },
     rollupOptions: {

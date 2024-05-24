@@ -5,8 +5,8 @@ import typescript from 'rollup-plugin-typescript2'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 // import commonjs from '@rollup/plugin-commonjs';
 // import pkg from '../package.json' assert { type: 'json' }
-export const name = 'kami-ui'
-export const file = type => `dist/kami-ui.${type}.js`
+export const name = 'ppsp-ui'
+export const file = type => `dist/ppsp-ui.${type}.js`
 const overrides = {
   compilerOptions: {
     // noImplicitAny: false,
@@ -39,7 +39,7 @@ export default {
       useTsconfigDeclarationDir: true
     }),
     css({
-      output: 'kami-ui.min.css'
+      output: 'ppsp-ui.min.css'
     }),
   ],
   external: ["vue", "lodash-es", "axios"]
