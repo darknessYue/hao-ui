@@ -31,6 +31,7 @@
     "build:vite:es": "vite build --config ./vite.config.es.ts",
     "move-style": "move-file dist/es/index.css dist/index.css",
     "clean": "rimraf dist",
+    "release": "release-it",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -53,6 +54,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "move-file-cli": "^3.0.0",
     "npm-run-all": "^4.1.5",
+    "release-it": "^17.3.0",
     "rimraf": "^5.0.7",
     "rollup-plugin-bundle-scss": "^0.1.3",
     "rollup-plugin-css-only": "^4.5.2",
