@@ -5,8 +5,8 @@ import typescript from 'rollup-plugin-typescript2'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 // import commonjs from '@rollup/plugin-commonjs';
 // import pkg from '../package.json' assert { type: 'json' }
-export const name = 'sp-ui'
-export const file = type => `dist/sp-ui.${type}.js`
+export const name = 'kuma-ui'
+export const file = type => `dist/kuma-ui.${type}.js`
 const overrides = {
   compilerOptions: {
     // noImplicitAny: false,
@@ -39,7 +39,7 @@ export default {
       useTsconfigDeclarationDir: true
     }),
     css({
-      output: 'sp-ui.min.css'
+      output: 'kuma-ui.min.css'
     }),
   ],
   external: ["vue", "lodash-es", "axios"]

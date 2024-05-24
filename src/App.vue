@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <h1>Sp-UI</h1>
+  <h1>Kuma-UI</h1>
   <h-button type="primary">点击</h-button>
   <h-button type="default">点击</h-button>
   <h-button type="success">点击</h-button>

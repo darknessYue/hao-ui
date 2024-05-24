@@ -8,8 +8,8 @@ export default defineConfig({
     outDir: "dist/umd",
     lib: {
       entry: resolve(__dirname, "./src/index.ts"),
-      name: "SpUi",
-      fileName: "sp-ui",
+      name: "KumaUi",
+      fileName: "kuma-ui",
       formats: ["umd"]
     },
     rollupOptions: {

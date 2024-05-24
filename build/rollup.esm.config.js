@@ -13,7 +13,7 @@ export default [{
   ...basicConfig,
   output: 
   {
-    file: 'dist/sp-ui.d.ts',
+    file: 'dist/kuma-ui.d.ts',
     format: 'es',
   },
   plugins: [
