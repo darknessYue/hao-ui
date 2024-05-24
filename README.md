@@ -1,13 +1,7 @@
-# Vue 3 + TypeScript + Vite + pinia + Vue-Router + Sass
+# Welcome PPSP-UI
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite.
+ vue3 components library
 
-## Command
+ template should help get you started developing with Vue 3 and TypeScript in Vite.
 
-1. ```javascript
-      npm run dev
-   ```
-
-2. ```javascript
-      npm run build
    ```
