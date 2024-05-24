@@ -25,8 +25,8 @@ export default defineConfig({
     outDir: "dist/es",
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "KumaUi",
-      fileName: "kuma-ui",
+      name: "KamiUi",
+      fileName: "kami-ui",
       formats: ["es"]
     },
     rollupOptions: {

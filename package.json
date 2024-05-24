@@ -1,15 +1,15 @@
 {
-  "name": "kuma-ui",
+  "name": "kami-ui",
   "version": "0.0.4",
   "private": false,
   "type": "module",
-  "main": "./dist/umd/kuma-ui.umd.cjs",
-  "module": "./dist/es/kuma-ui.js",
+  "main": "./dist/umd/kami-ui.umd.cjs",
+  "module": "./dist/es/kami-ui.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/es/kuma-ui.js",
-      "require": "./dist/umd/kuma-ui.umd.cjs",
+      "import": "./dist/es/kami-ui.js",
+      "require": "./dist/umd/kami-ui.umd.cjs",
       "types": "./dist/types/index.d.ts"
     },
     "./dist/": {
